@@ -24,7 +24,7 @@ def normalize(filename):
     return normalize_filename
 
 
-# створимо порожні списки файлів, до яких будемо відправляти назви файлів
+# створюємо порожні списки файлів, до яких будемо відправляти назви файлів
 image_files = []
 document_files = []
 audio_files = []
@@ -45,7 +45,7 @@ def create(folder_path):
     return None
 
 
-# Перевіримо папки на наповнення та видалимо порожні
+# Перевіряємо папки на наповнення та видалимо порожні
 def clear(folder_path):
     for folder in folder_path.iterdir():  # перебираємо елементи в середині папки
         if folder.is_dir():
